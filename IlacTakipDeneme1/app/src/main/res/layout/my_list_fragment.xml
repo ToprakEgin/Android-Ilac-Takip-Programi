@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/relativeLayout1"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/FirstText"
+            android:layout_width="227dp"
+            android:layout_height="27dp"
+            android:textSize="18sp"
+            android:text="Augmentin Bid 1000mg"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/SecondText"
+            android:layout_width="165dp"
+            android:layout_height="27dp"
+            android:textSize="18sp"
+            android:text="8699832090055">
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

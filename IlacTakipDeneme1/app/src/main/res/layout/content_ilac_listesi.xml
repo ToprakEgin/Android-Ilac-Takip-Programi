@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_bunu_kopyala"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.toprakegin.ilactakipdeneme1.IlacListesiActivity"
+    tools:showIn="@layout/activity_ilac_listesi">
+
+    <ListView
+        android:id="@+id/listviewtumilaclar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="23dp">
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="    İlaç İsmi                                        Barkodu"
+        android:textSize="17sp"
+        android:textColor="@color/colorPrimary"/>
+
+</RelativeLayout>

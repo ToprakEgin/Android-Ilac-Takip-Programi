@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navdraw_ilac_kutusu"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/ilac_kutusu" />
+        <item
+            android:id="@+id/navdraw_tum_ilaclar"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/navdraw_tum_ilaclar" />
+    </group>
+
+    <item android:title="@string/navdraw_secenekler">
+        <menu>
+            <item
+                android:id="@+id/navdraw_ayarlar"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/navdraw_ayarlar" />
+        </menu>
+    </item>
+
+</menu>

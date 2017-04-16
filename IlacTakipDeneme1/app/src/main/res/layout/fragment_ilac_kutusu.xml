@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app2="q"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_ilac_kutusu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.toprakegin.ilactakipdeneme1.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/sabah_03"
+        android:id="@+id/ImageSabah"
+        android:elevation="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/ogle_03"
+        android:layout_below="@+id/ImageSabah"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ImageÖğle"
+        android:elevation="22dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/aksam_03"
+        android:layout_below="@+id/ImageÖğle"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ImageAkşam"
+        android:elevation="22dp" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/gece_03"
+        android:layout_below="@+id/ImageAkşam"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ImageGece"
+        android:elevation="22dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ButtonSabah"
+        android:layout_above="@+id/ImageÖğle"
+        android:layout_alignParentEnd="true"
+        style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+        android:backgroundTint="@android:color/background_light" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:color/background_light"
+        android:layout_below="@+id/ImageSabah"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ButtonOgle"
+        android:layout_above="@+id/ImageAkşam"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@android:color/background_light" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:color/background_light"
+        android:layout_below="@+id/ImageÖğle"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ButtonAksam"
+        android:layout_above="@+id/ImageGece"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@android:color/background_light" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:color/background_light"
+        android:layout_below="@+id/ImageAkşam"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ButtonGece"
+        android:layout_alignBottom="@+id/ImageGece"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@android:color/background_light" />
+
+    <TextView
+        android:text="@string/main_sabah"
+        android:textSize="@dimen/main_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textSabah"
+        android:layout_above="@+id/ImageÖğle"
+        android:layout_toEndOf="@+id/ImageSabah"
+        android:layout_marginBottom="29dp" />
+
+    <TextView
+        android:text="@string/main_ogle"
+        android:textSize="@dimen/main_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textÖğle"
+        android:layout_below="@+id/ImageSabah"
+        android:layout_toEndOf="@+id/ImageÖğle"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:text="@string/main_aksam"
+        android:textSize="@dimen/main_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textAkşam"
+        android:layout_below="@+id/ImageÖğle"
+        android:layout_toEndOf="@+id/ImageAkşam" />
+
+    <TextView
+        android:text="@string/main_gece"
+        android:textSize="@dimen/main_text_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textGece"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/ImageAkşam"
+        android:layout_toEndOf="@+id/ImageGece" />
+    ///////////////////////////////////////////////////////////////// SAATLER
+
+    <TextView
+        android:text="12:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_alignBottom="@+id/textSabah"
+        android:layout_alignStart="@+id/textView9" />
+
+    <TextView
+        android:text="12:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textÖğle"
+        android:layout_alignStart="@+id/textView10"
+        android:id="@+id/textView11" />
+
+    <TextView
+        android:text="18:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textÖğle"
+        android:layout_alignStart="@+id/textView11"
+        android:id="@+id/textView12" />
+
+    <TextView
+        android:text="18:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textAkşam"
+        android:layout_toEndOf="@+id/textAkşam"
+        android:layout_alignStart="@+id/textView12"
+        android:id="@+id/textView13" />
+
+    <TextView
+        android:text="24:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textAkşam"
+        android:layout_toEndOf="@+id/textAkşam"
+        android:layout_alignStart="@+id/textView13"
+        android:id="@+id/textView14" />
+
+    <TextView
+        android:text="24:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textGece"
+        android:layout_toEndOf="@+id/textAkşam"
+        android:layout_alignStart="@+id/textView14"
+        android:id="@+id/textView15" />
+
+    <TextView
+        android:text="6:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView16"
+        android:layout_alignBottom="@+id/textGece"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:text="6:00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_marginEnd="20dp"
+        android:layout_alignTop="@+id/textSabah"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/ilac_kutusu_tarih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="12/10/1995"
+        android:textSize="20dp"
+        android:layout_marginTop="480dp"/>
+
+</RelativeLayout>

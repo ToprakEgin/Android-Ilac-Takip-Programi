@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.toprakegin.ilactakipdeneme1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logomain"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name_ilac_kutusu"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.toprakegin.ilactakipdeneme1.MainActivity" />
+        </activity>
+        <activity
+            android:name=".IlacEklemeActivity"
+            android:label="@string/ilac_ekleme_label"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".IlacListesiActivity"
+            android:label="@string/title_activity_ilac_listesi"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MyListFragment" />
+        <activity
+            android:name=".SabahActivity"
+            android:label="@string/title_activity_sabah"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".OgleActivity"
+            android:label="@string/title_activity_ogle"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AksamActivity"
+            android:label="@string/title_activity_aksam"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".GeceActivity"
+            android:label="@string/title_activity_gece"
+            android:parentActivityName=".MainActivity"/>
+        
+        <receiver android:name=".Alarm_Receiver"/>
+        <service android:name=".RingtonePlayService"
+            android:enabled="true"/>
+    </application>
+
+</manifest>

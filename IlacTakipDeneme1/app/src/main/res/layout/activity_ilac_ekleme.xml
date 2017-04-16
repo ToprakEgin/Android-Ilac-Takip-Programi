@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ilac_ekleme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.toprakegin.ilactakipdeneme1.IlacEklemeActivity">
+
+
+
+    <com.example.toprakegin.ilactakipdeneme1.CustomAutoCompleteView
+        android:id="@+id/AutoCompleteSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="İlaç İsmini Buradan Arayabilirsiniz"
+        android:ems="10"
+        android:imeOptions="actionSearch"
+        android:completionThreshold="1"
+        android:inputType="textAutoComplete|textAutoCorrect"
+        android:textColor="@color/colorBlack" >
+        <requestFocus />
+    </com.example.toprakegin.ilactakipdeneme1.CustomAutoCompleteView>
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="200dip"
+        android:layout_height="300dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                ///////////////////////////////////////////////////////TAB1
+                <RelativeLayout
+                    android:id="@+id/Tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:text="@string/ilac_ekleme_bitti_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/BittiTab1" />
+
+                    <Button
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT1T1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab1Tv1"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:text="1.   08:00"/>
+                </RelativeLayout>
+
+                //////////////////////////////////////////////////////TAB2
+                <RelativeLayout
+                    android:id="@+id/Tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:text="@string/ilac_ekleme_bitti_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/BittiTab2" />
+
+                    <Button
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT2T1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab2Tv1"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:text="1.   08:00"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT2T2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab2Tv2"
+                        android:text="2.   12:00"
+                        android:textSize="20sp"
+                        android:layout_marginTop="60dp"/>
+
+                </RelativeLayout>
+
+                //////////////////////////////////////////////////////TAB3
+                <RelativeLayout
+                    android:id="@+id/Tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:text="@string/ilac_ekleme_bitti_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/BittiTab3" />
+
+                    <Button
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT3T1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab3Tv1"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:text="1.   08:00"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT3T2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab3Tv2"
+                        android:text="2.   12:00"
+                        android:textSize="20sp"
+                        android:layout_marginTop="60dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT3T3"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab3Tv3"
+                        android:text="3.   17:00"
+                        android:textSize="20sp"
+                        android:layout_marginTop="110dp"/>
+                </RelativeLayout>
+
+                //////////////////////////////////////////////////////TAB4
+                <RelativeLayout
+                    android:id="@+id/Tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:text="@string/ilac_ekleme_bitti_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/BittiTab4" />
+
+                    <Button
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT4T1"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab4Tv1"
+                        android:textSize="20sp"
+                        android:layout_marginTop="10dp"
+                        android:text="1.   08:00"/>
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT4T2"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab4Tv2"
+                        android:text="2.   12:00"
+                        android:textSize="20sp"
+                        android:layout_marginTop="60dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT4T3"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab4Tv3"
+                        android:text="3.   17:00"
+                        android:textSize="20sp"
+                        android:layout_marginTop="110dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="150dp"
+                        android:layout_marginLeft="@dimen/zaman_ayar_button_sol_margin"
+                        android:text="@string/zamani_ayarla_button"
+                        android:id="@+id/ZaT4T4"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Tab4Tv4"
+                        android:textSize="20sp"
+                        android:text="4.   23:00"
+                        android:layout_marginTop="160dp"/>
+                </RelativeLayout>
+
+                /////////////////////////////////////////////////////TABLER BİTER
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_menu_camera"
+        android:id="@+id/BarkodFAB"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
